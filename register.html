@@ -1,464 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
 	<title>GreatTour</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
-
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
-
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-    <div class="container">
-	  <a class="navbar-brand" href="index.html">GreatTour</a>	
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="oi oi-menu"></span> Menu
-      </button>
-
-      <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav ml-auto">
-		<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-		<!--   <li class="nav-item"><a href="about.html" class="nav-link">About</a></li> -->
-		<li class="nav-item active"><a href="paket-wisata.html" class="nav-link">Paket Wisata</a></li>
-		<!--           <li class="nav-item"><a href="hotel.html" class="nav-link">Hotels</a></li>
-		          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-		          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li> -->
-		<li class="nav-item cta"><a href="contact.html" class="nav-link"><span>MASUK</span></a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-    <!-- END nav -->
-    
-    <div class="hero-wrap js-fullheight" style="background-image: url('images/bg_3.jpg');">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
-          <div class="col-md-9 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
-            <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="index.html">Home</a></span> <span>Paket Wisata</span></p>
-            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Paket Wisata</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <section class="ftco-section ftco-degree-bg">
-      <div class="container">
-        <div class="row">
-        	<div class="col-lg-3 sidebar ftco-animate">
-        		<div class="sidebar-wrap bg-light ftco-animate">
-        			<h3 class="heading mb-4">Filter</h3>
-        			<form action="#">
-        				<div class="fields">
-		              <div class="form-group">
-		                <input type="text" class="form-control" placeholder="Mau kemana ?">
-		              </div>
-		              <div class="form-group">
-		                <div class="select-wrap one-third">
-	                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-	                    <select name="" id="" class="form-control" placeholder="Kategori">
-	                      <option value="">Pilih Kategori</option>
-	                      <option value="">Kategori 1</option>
-	                      <option value="">Kategori 2</option>
-	                      <option value="">Kategori 3</option>
-	                      <option value="">Kategori 4</option>
-	                    </select>
-	                  </div>
-		              </div>
-		              <div class="form-group">
-		                <input type="text" id="checkin_date" class="form-control" placeholder="Tanggal jalan">
-					  </div>	
-											<div class="form-group">
-												<input type="text" class="form-control" placeholder="Jumlah peserta">
-											</div>
-		              <div class="form-group">
-		              	<div class="range-slider">
-		              		<span>
-										    <input type="number" value="25000" min="0" max="120000"/>	-
-										    <input type="number" value="50000" min="0" max="120000"/>
-										  </span>
-										  <input value="1000" min="0" max="120000" step="500" type="range"/>
-										  <input value="50000" min="0" max="120000" step="500" type="range"/>
-										  </svg>
-										</div>
-		              </div>
-		              <div class="form-group">
-		                <input type="submit" value="Cari" class="btn btn-primary py-3 px-5">
-		              </div>
-		            </div>
-	            </form>
-        		</div>
-        		<div class="sidebar-wrap bg-light ftco-animate">
-        			<h3 class="heading mb-4">Rating</h3>
-        			<form method="post" class="star-rating">
-							  <div class="form-check">
-									<input type="checkbox" class="form-check-input" id="exampleCheck1">
-									<label class="form-check-label" for="exampleCheck1">
-										<p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></span></p>
-									</label>
-							  </div>
-							  <div class="form-check">
-						      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-						      <label class="form-check-label" for="exampleCheck1">
-						    	   <p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i></span></p>
-						      </label>
-							  </div>
-							  <div class="form-check">
-						      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-						      <label class="form-check-label" for="exampleCheck1">
-						      	<p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i></span></p>
-						     </label>
-							  </div>
-							  <div class="form-check">
-							    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-						      <label class="form-check-label" for="exampleCheck1">
-						      	<p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i></span></p>
-						      </label>
-							  </div>
-							  <div class="form-check">
-						      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-						      <label class="form-check-label" for="exampleCheck1">
-						      	<p class="rate"><span><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i></span></p>
-							    </label>
-							  </div>
-							</form>
-        		</div>
-          </div>
-          <div class="col-lg-9">
-          	<div class="row">
-          		<div class="col-md-4 ftco-animate">
-		    				<div class="destination">
-		    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/destination-1.jpg);">
-		    						<div class="icon d-flex justify-content-center align-items-center">
-    							<span class="icon-search2"></span>
-    						</div>
-		    					</a>
-						<div class="text p-3">
-							<div class="d-flex">
-								<div class="one">
-									<h3><a href="#">Paris, Italia</a></h3>
-									<p class="rate">
-										<i class="icon-star"></i>
-										<i class="icon-star"></i>
-										<i class="icon-star"></i>
-										<i class="icon-star"></i>
-										<i class="icon-star-o"></i>
-										<span>8 Rating</span>
-									</p>
-								</div>
-								<div class="two">
-									<span class="price">IDR 20M</span>
-								</div>
-							</div>
-							<p>Nikmati keindahan paris Italian</p>
-							<p class="days"><span>2 hari 3 malam</span></p>
-							<hr>
-							<p class="bottom-area d-flex">
-								<span><i class="icon-map-o"></i> Paris, Italia</span>
-								<span class="ml-auto"><a href="#">Cari Tahu</a></span>
-							</p>
-						</div>
-		    				</div>
-		    			</div>
-		    			<div class="col-md-4 ftco-animate">
-		    				<div class="destination">
-		    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/destination-2.jpg);">
-		    						<div class="icon d-flex justify-content-center align-items-center">
-    							<span class="icon-search2"></span>
-    						</div>
-		    					</a>
-						<div class="text p-3">
-							<div class="d-flex">
-								<div class="one">
-									<h3><a href="#">Paris, Italia</a></h3>
-									<p class="rate">
-										<i class="icon-star"></i>
-										<i class="icon-star"></i>
-										<i class="icon-star"></i>
-										<i class="icon-star"></i>
-										<i class="icon-star-o"></i>
-										<span>8 Rating</span>
-									</p>
-								</div>
-								<div class="two">
-									<span class="price">IDR 20M</span>
-								</div>
-							</div>
-							<p>Nikmati keindahan paris Italian</p>
-							<p class="days"><span>2 hari 3 malam</span></p>
-							<hr>
-							<p class="bottom-area d-flex">
-								<span><i class="icon-map-o"></i> Paris, Italia</span>
-								<span class="ml-auto"><a href="#">Cari Tahu</a></span>
-							</p>
-						</div>
-		    				</div>
-		    			</div>
-		    			<div class="col-md-4 ftco-animate">
-		    				<div class="destination">
-		    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/destination-3.jpg);">
-		    						<div class="icon d-flex justify-content-center align-items-center">
-    							<span class="icon-search2"></span>
-    						</div>
-		    					</a>
-						<div class="text p-3">
-							<div class="d-flex">
-								<div class="one">
-									<h3><a href="#">Paris, Italia</a></h3>
-									<p class="rate">
-										<i class="icon-star"></i>
-										<i class="icon-star"></i>
-										<i class="icon-star"></i>
-										<i class="icon-star"></i>
-										<i class="icon-star-o"></i>
-										<span>8 Rating</span>
-									</p>
-								</div>
-								<div class="two">
-									<span class="price">IDR 20M</span>
-								</div>
-							</div>
-							<p>Nikmati keindahan paris Italian</p>
-							<p class="days"><span>2 hari 3 malam</span></p>
-							<hr>
-							<p class="bottom-area d-flex">
-								<span><i class="icon-map-o"></i> Paris, Italia</span>
-								<span class="ml-auto"><a href="#">Cari Tahu</a></span>
-							</p>
-						</div>
-		    				</div>
-		    			</div>
-		    			<div class="col-md-4 ftco-animate">
-		    				<div class="destination">
-		    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/destination-4.jpg);">
-		    						<div class="icon d-flex justify-content-center align-items-center">
-    							<span class="icon-search2"></span>
-    						</div>
-		    					</a>
-						<div class="text p-3">
-							<div class="d-flex">
-								<div class="one">
-									<h3><a href="#">Paris, Italia</a></h3>
-									<p class="rate">
-										<i class="icon-star"></i>
-										<i class="icon-star"></i>
-										<i class="icon-star"></i>
-										<i class="icon-star"></i>
-										<i class="icon-star-o"></i>
-										<span>8 Rating</span>
-									</p>
-								</div>
-								<div class="two">
-									<span class="price">IDR 20M</span>
-								</div>
-							</div>
-							<p>Nikmati keindahan paris Italian</p>
-							<p class="days"><span>2 hari 3 malam</span></p>
-							<hr>
-							<p class="bottom-area d-flex">
-								<span><i class="icon-map-o"></i> Paris, Italia</span>
-								<span class="ml-auto"><a href="#">Cari Tahu</a></span>
-							</p>
-						</div>
-		    				</div>
-		    			</div>
-		    			<div class="col-md-4 ftco-animate">
-		    				<div class="destination">
-		    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/destination-5.jpg);">
-		    						<div class="icon d-flex justify-content-center align-items-center">
-    							<span class="icon-search2"></span>
-    						</div>
-		    					</a>
-						<div class="text p-3">
-							<div class="d-flex">
-								<div class="one">
-									<h3><a href="#">Paris, Italia</a></h3>
-									<p class="rate">
-										<i class="icon-star"></i>
-										<i class="icon-star"></i>
-										<i class="icon-star"></i>
-										<i class="icon-star"></i>
-										<i class="icon-star-o"></i>
-										<span>8 Rating</span>
-									</p>
-								</div>
-								<div class="two">
-									<span class="price">IDR 20M</span>
-								</div>
-							</div>
-							<p>Nikmati keindahan paris Italian</p>
-							<p class="days"><span>2 hari 3 malam</span></p>
-							<hr>
-							<p class="bottom-area d-flex">
-								<span><i class="icon-map-o"></i> Paris, Italia</span>
-								<span class="ml-auto"><a href="#">Cari Tahu</a></span>
-							</p>
-						</div>
-		    				</div>
-		    			</div>
-		    			<div class="col-md-4 ftco-animate">
-		    				<div class="destination">
-		    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/destination-6.jpg);">
-		    						<div class="icon d-flex justify-content-center align-items-center">
-    							<span class="icon-search2"></span>
-    						</div>
-		    					</a>
-						<div class="text p-3">
-							<div class="d-flex">
-								<div class="one">
-									<h3><a href="#">Paris, Italia</a></h3>
-									<p class="rate">
-										<i class="icon-star"></i>
-										<i class="icon-star"></i>
-										<i class="icon-star"></i>
-										<i class="icon-star"></i>
-										<i class="icon-star-o"></i>
-										<span>8 Rating</span>
-									</p>
-								</div>
-								<div class="two">
-									<span class="price">IDR 20M</span>
-								</div>
-							</div>
-							<p>Nikmati keindahan paris Italian</p>
-							<p class="days"><span>2 hari 3 malam</span></p>
-							<hr>
-							<p class="bottom-area d-flex">
-								<span><i class="icon-map-o"></i> Paris, Italia</span>
-								<span class="ml-auto"><a href="#">Cari Tahu</a></span>
-							</p>
-						</div>
-		    				</div>
-		    			</div>
-          	</div>
-          	<div class="row mt-5">
-		          <div class="col text-center">
-		            <div class="block-27">
-		              <ul>
-		                <li><a href="#">&lt;</a></li>
-		                <li class="active"><span>1</span></li>
-		                <li><a href="#">2</a></li>
-		                <li><a href="#">3</a></li>
-		                <li><a href="#">4</a></li>
-		                <li><a href="#">5</a></li>
-		                <li><a href="#">&gt;</a></li>
-		              </ul>
-		            </div>
-		          </div>
-		        </div>
-          </div> <!-- .col-md-8 -->
-        </div>
-      </div>
-    </section> <!-- .section -->
-
-	<footer class="ftco-footer ftco-bg-dark ftco-section">
-		<div class="container">
-			<div class="row mb-5">
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Great Event Tour</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-							labore et dolore magna
-							aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-							commodo consequat.</p>
-						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-							<li class="ftco-animate"><a href="https://www.instagram.com/greateventtour/"
-									target="_blank"><span class="icon-facebook"></span></a></li>
-							<li class="ftco-animate"><a href="https://web.facebook.com/greattour" target="_blank"><span
-										class="icon-instagram"></span></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4 ml-md-5">
-						<h2 class="ftco-heading-2">Informasi</h2>
-						<ul class="list-unstyled">
-							<li><a href="#" class="py-2 d-block">Tentang</a></li>
-							<li><a href="#" class="py-2 d-block">Layanan</a></li>
-							<li><a href="#" class="py-2 d-block">FAQ</a></li>
-							<li><a href="#" class="py-2 d-block">Syarat dan Ketentuan</a></li>
-							<li><a href="#" class="py-2 d-block">Partnership</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Kontak</h2>
-						<div class="block-23 mb-3">
-							<ul>
-								<li><span class="icon icon-map-marker"></span><span class="text">Jl Siantan V no 19
-										cengkareng residence</span></li>
-								<li><a href="#"><span class="icon icon-whatsapp"></span><span
-											class="text">081212265437</span></a></li>
-								<li><a href="#"><span class="icon icon-phone"></span><span
-											class="text">021-29038754</span></a></li>
-								<li><a href="#"><span class="icon icon-envelope"></span><span
-											class="text">admin@greattour.id</span></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-center">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
 	
-					<p>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script> All rights reserved. GreatTour
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					</p>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-form-title" style="background-image: url(images/bg-01.jpg);">
+					<span class="login100-form-title-1">
+						Daftar
+					</span>
 				</div>
+
+				<form class="login100-form validate-form">
+					<div class="wrap-input100 m-b-26">
+						<span class="label-input100">Nama</span>
+						<input class="input100" type="text" name="nama" placeholder="Masukkan nama kamu">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 m-b-18">
+						<span class="label-input100">Email</span>
+						<input class="input100" type="email" name="email" placeholder="Masukkan alamat emal">
+						<span class="focus-input100"></span>
+					</div>
+
+						<div class="wrap-input100 m-b-18">
+						<span class="label-input100">Password</span>
+						<input class="input100" type="password" name="pass" placeholder="Masukkan password">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 m-b-18">
+						<span class="label-input100">Nomor Telepon</span>
+						<input class="input100" type="password" name="hp" placeholder="Masukkan nomor telepon">
+						<span class="focus-input100"></span>
+					</div>
+
+
+
+
+					<div class="container-login100-form-btn">
+		                <input type="submit" value="Daftar" onclick="window.location.href='index-login.html'" class="login100-form-btn">
+		              	</div>
+						</button>
+					</div>
+				</form>
 			</div>
 		</div>
-	</footer>
-    
-  
+	</div>
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/bootstrap-datepicker.js"></script>
-  <script src="js/jquery.timepicker.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <script src="js/range.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
-  <script src="js/main.js"></script>
-    
-  </body>
+</body>
 </html>
