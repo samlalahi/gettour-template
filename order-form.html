@@ -164,7 +164,7 @@
 					            <div class="form-group">
 				                <div class="select-wrap one-third">
 			                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-			                    <select name="" id="" class="form-control" placeholder="Guest">
+			                    <select name="" id="min-pax" class="form-control" placeholder="Guest" onchange="hitungPeserta()">
 			                      <option value="0">Banyak Peserta</option>
 			                      <option value="1" selected>1</option>
 			                      <option value="2">2</option>
@@ -174,12 +174,19 @@
 			                  </div>
 				              </div>
 			              </div>
+			                <div class="col-md-12">
+				              <div class="form-group">
+				                <textarea class="form-control" cols="30" rows="7"placeholder="Keterangan Lain"> </textarea>
+				              </div>
+			              </div>
+
 		              </div>
 		            </div>
           		</div>
 
-          		  <div class="col-md-12 hotel-single ftco-animate mb-5 mt-4">
-          			<h4 class="mb-5">Data Peserta</h4>
+          		<div id="datapeserta">
+          		  <div id="data-1" class="col-md-12 hotel-single ftco-animate mb-5 mt-4">
+          			<h4 class="mb-5">Data Peserta #1</h4>
           			<div class="fields">
           				<div class="row">
           					<div class="col-md-6">
@@ -210,6 +217,7 @@
 			              </div>
 		              </div>
 		            </div>
+		        </div>
 
 		                			<div class="col-md-12 hotel-single ftco-animate mb-5 mt-4">
           			<div class="fields">
@@ -322,6 +330,56 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+
+  <script>
+
+  	function hitungPeserta(){
+
+  	var Skrng = 0;
+
+  	var Peserta = document.getElementById("banyak-peserta");
+  	var Jlh = Peserta.options[Peserta.selectedIndex].value;
+  	var Jlhpsrt = parseInt(Jlh);
+  	console.log(Jlhpsrt);
+
+  	if (Skrng < Jlhpsrt)
+  		for (var i = Skrng; i < Jlhpsrt; i++){
+
+  		}
+
+
+
+
+
+  					if (lastest < minpax) {
+					for (var i = lastest; i < minpax; i++) {
+						var str = format.replace(/example/g, "data-" + i); 
+						str = str.replace(/Peserta/g, "Peserta #" + (parseInt(i)+1)); 
+						$("#protect").append(str);
+					} 
+					lastest = parseInt($('#min_pax').val());
+				} 
+				if (lastest > minpax) { 
+					for (var i = lastest; i > minpax; i--) { 
+						$("#data-" + (i-1)).remove();
+					} 
+					lastest = $('#min_pax').val();
+				} 
+				$('#totalunit').val(minpax);
+				$('#totalcost').val(minpax * 16990000);
+				$('#totalcost').trigger('keyup');
+			});	
+
+  	var nama = document.createElement("data");
+  	nama.setAttribute("type", "text");
+  	document.body.appendChild(nama);
+
+
+  	// tambahForm();
+  	}
+
+
+  </script>
     
   </body>
 </html>
