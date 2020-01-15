@@ -164,7 +164,7 @@
 					            <div class="form-group">
 				                <div class="select-wrap one-third">
 			                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-			                    <select name="" id="min-pax" class="form-control" placeholder="Guest" onchange="hitungPeserta()">
+			                    <select name="" id="min-pax" class="form-control" placeholder="Guest">
 			                      <option value="0">Banyak Peserta</option>
 			                      <option value="1" selected>1</option>
 			                      <option value="2">2</option>
@@ -184,8 +184,8 @@
 		            </div>
           		</div>
 
-          		<div id="datapeserta">
-          		  <div id="data-1" class="col-md-12 hotel-single ftco-animate mb-5 mt-4">
+          		<div id="protect">
+          		  <div id="data-0" class="col-md-12 hotel-single ftco-animate mb-5 mt-4">
           			<h4 class="mb-5">Data Peserta #1</h4>
           			<div class="fields">
           				<div class="row">
@@ -224,7 +224,7 @@
           				<div class="row">
           	
 			              <div class="col-md-12"> 
-			              	<p class="h5">Total Biaya <span>IDR20.000.000</span> </p>
+			              	<p class="h5">Total Biaya <span>IDR</span> <span id="totalcost">20000000</span> </p>
 			              </div>
 			              <br> 	
 				            <div class="col-md-12">
@@ -331,27 +331,17 @@
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
 
-  <script>
 
-  	function hitungPeserta(){
+  <script type="text/javascript"> 
+		var lastest = 0;
 
-  	var Skrng = 0;
+		$(document).ready(function() {  
+			var format = $('#example').parent().html(); 
+			$('#example').remove();
 
-  	var Peserta = document.getElementById("banyak-peserta");
-  	var Jlh = Peserta.options[Peserta.selectedIndex].value;
-  	var Jlhpsrt = parseInt(Jlh);
-  	console.log(Jlhpsrt);
-
-  	if (Skrng < Jlhpsrt)
-  		for (var i = Skrng; i < Jlhpsrt; i++){
-
-  		}
-
-
-
-
-
-  					if (lastest < minpax) {
+			$('#min_pax').on("change", function(event) { 
+				var minpax = parseInt($('#min_pax').val());
+				if (lastest < minpax) {
 					for (var i = lastest; i < minpax; i++) {
 						var str = format.replace(/example/g, "data-" + i); 
 						str = str.replace(/Peserta/g, "Peserta #" + (parseInt(i)+1)); 
@@ -368,18 +358,18 @@
 				$('#totalunit').val(minpax);
 				$('#totalcost').val(minpax * 16990000);
 				$('#totalcost').trigger('keyup');
-			});	
+			});
 
-  	var nama = document.createElement("data");
-  	nama.setAttribute("type", "text");
-  	document.body.appendChild(nama);
+			$('#sameBtn').on("click", function(event) { 
+				event.preventDefault();
+				var target = $('#data-0');
+				target.find(".name").val('Samuel Christian Silalahi');
+				target.find(".phone").val('082114260502');
+			});
 
-
-  	// tambahForm();
-  	}
-
-
-  </script>
+			$('#min_pax').trigger('change');
+		});
+	</script>
     
   </body>
 </html>
